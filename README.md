@@ -1,6 +1,6 @@
 # Ionic Angular SQLite
 
-App to store data using the [Ionic 4 framework](https://ionicframework.com/docs), [cordova SQLite database](https://ionicframework.com/docs/native/sqlite), [cordova SQLite Porter](https://ionicframework.com/docs/native/sqlite-porter) and [Capacitor](https://capacitor.ionicframework.com/).
+App to store data using the [Ionic 4 framework](https://ionicframework.com/docs), [cordova SQLite database](https://ionicframework.com/docs/native/sqlite) & [SQLite Porter](https://ionicframework.com/docs/native/sqlite-porter) and [Capacitor](https://capacitor.ionicframework.com/).
 
 ## Table of contents
 
@@ -24,13 +24,13 @@ App to store data using the [Ionic 4 framework](https://ionicframework.com/docs)
 
 ## Technologies
 
-* [Ionic/angular v4.0.0](https://ionicframework.com/)
+* [Ionic/angular v4..0](https://ionicframework.com/)
 
 * [Ionic CLI v4.12.0](https://ionicframework.com/docs/cli)
 
-* [cordova SQLite database](https://ionicframework.com/docs/native/sqlite)
+* [cordova plugin SQLite database v3.2.0](https://ionicframework.com/docs/native/sqlite)
 
-* [cordova SQLite Porter](https://ionicframework.com/docs/native/sqlite-porter)
+* [cordova SQLite Porter v1.1.0](https://ionicframework.com/docs/native/sqlite-porter)
 
 ## Setup
 
@@ -38,7 +38,7 @@ App to store data using the [Ionic 4 framework](https://ionicframework.com/docs)
 
 ## Code Examples
 
-* `database.service.ts` function to get details of a Developer from the database
+* `database.service.ts` function to get details of a developer from the database.
 
 ```typescript
 getDeveloper(id): Promise<Dev> {
