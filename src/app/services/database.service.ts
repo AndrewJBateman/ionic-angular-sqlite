@@ -24,7 +24,7 @@ export class DatabaseService {
 
 	constructor(
 		private plt: Platform,
-		private sqlitPorter: SQLitePorter,
+		private sqlitePorter: SQLitePorter,
 		private sqlite: SQLite,
 		private http: HttpClient
 	) {
