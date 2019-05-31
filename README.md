@@ -24,9 +24,11 @@ App to store data using the [Ionic 4 framework](https://ionicframework.com/docs)
 
 ## Technologies
 
-* [Ionic/angular v4..0](https://ionicframework.com/)
+* [Ionic/angular v4.4.2](https://ionicframework.com/)
 
-* [Ionic CLI v4.12.0](https://ionicframework.com/docs/cli)
+* [Ionic v5.6.1](https://ionicframework.com/docs/cli)
+
+* [Angular 8.0.0](https://angular.io/)
 
 * [cordova plugin SQLite database v3.2.0](https://ionicframework.com/docs/native/sqlite)
 
@@ -62,9 +64,11 @@ getDeveloper(id): Promise<Dev> {
 
 * storage of data in an SQL database.
 
+* updated to Angular 8.
+
 ## Status & To-do list
 
-* Status: compiles and displays in a dev server. Needs implementing on an Android device or simulator to use database etc. Database side not tested.
+* Status: compiles and displays in a dev server. Build webpacks created. Needs implementing on an Android device or simulator to use database etc. Database side not tested.
 
 * To-do: test database to see if it stores Dev and Product details.
 
@@ -74,4 +78,4 @@ getDeveloper(id): Promise<Dev> {
 
 ## Contact
 
-Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
