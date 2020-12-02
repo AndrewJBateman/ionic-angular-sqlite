@@ -23,7 +23,7 @@ App to store data using the [Ionic 5 framework](https://ionicframework.com/docs)
 
 ## Screenshots
 
-![example screen print](./img/dev-screen.png)
+![example screen print](./img/dev.screen.png)
 ![example screen print](./img/products-screen.png)
 
 ## Technologies
