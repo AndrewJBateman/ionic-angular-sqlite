@@ -122,7 +122,7 @@ export class DatabaseService {
 	}
 
 	loadProducts() {
-// tslint:disable-next-line: max-line-length
+		// tslint:disable-next-line: max-line-length
 		const query = 'SELECT product.name, product.id, developer.name AS creator FROM product JOIN developer ON developer.id = product.creatorId';
 		return this.database.executeSql(query, []).then(data => {
 			const products = [];

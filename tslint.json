@@ -5,9 +5,7 @@
   ],
   "rules": {
 		"no-string-literal": false,
-		"indent": {
-      "options": ["tabs", 2]
-    },
+		"indent": false,
     "array-type": false,
     "arrow-parens": false,
     "deprecation": {
