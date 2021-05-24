@@ -1,6 +1,12 @@
 # Ionic Angular SQLite
 
-App to store data using the [Ionic 5 framework](https://ionicframework.com/docs), [cordova SQLite database](https://ionicframework.com/docs/native/sqlite) & [SQLite Porter](https://ionicframework.com/docs/native/sqlite-porter) and [Capacitor](https://capacitor.ionicframework.com/).
+* App to store data using the [Ionic 5 framework](https://ionicframework.com/docs), [cordova SQLite database](https://ionicframework.com/docs/native/sqlite) & [SQLite Porter](https://ionicframework.com/docs/native/sqlite-porter) and [Capacitor](https://capacitor.ionicframework.com/).
+* **Note:** to open web links in a new window use: _ctrl+click on link_
+
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-sqlite?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/ionic-angular-sqlite?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/ionic-angular-sqlite?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/ionic-angular-sqlite?style=plastic)
 
 ## Table of contents
 
@@ -30,7 +36,7 @@ App to store data using the [Ionic 5 framework](https://ionicframework.com/docs)
 
 * [Ionic/angular v5](https://ionicframework.com/)
 * [Ionic v5](https://ionicframework.com/docs/cli)
-* [Angular 11](https://angular.io/)
+* [Angular 12](https://angular.io/)
 * [cordova plugin SQLite database v5](https://ionicframework.com/docs/native/sqlite)
 * [cordova SQLite Porter v5](https://ionicframework.com/docs/native/sqlite-porter)
 
@@ -64,7 +70,6 @@ getDeveloper(id): Promise<Dev> {
 ## Features
 
 * storage of data in an SQL database.
-* updated to Angular 11.
 
 ## Status & To-do list
 
@@ -75,6 +80,10 @@ getDeveloper(id): Promise<Dev> {
 
 * [devdactic: How to Build an Ionic 4 App with SQLite Database & Queries (And Debug It!)](https://devdactic.com/ionic-4-sqlite-queries/).
 
-## Contact
+## :file_folder: License
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* This project is licensed under the terms of the MIT license.
+
+## :envelope: Contact
+
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
