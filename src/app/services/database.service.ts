@@ -49,8 +49,10 @@ export class DatabaseService {
 		});
 	}
 
-	getDatabaseState() {
-		return this.dbReady.asObservable();
+	getDatabaseState(): Observable<boolean> {
+		const dbState = this.dbReady.asObservable();
+		console.log('dbState', dbState);
+		return dbState;
 	}
 
 	getDevs(): Observable<Dev[]> {
@@ -61,8 +63,8 @@ export class DatabaseService {
 		return this.products.asObservable();
 	}
 
-	loadDevelopers() {
-		return this.database.executeSql('SELECT * FROM developer', []).then(data => {
+	async loadDevelopers(): Promise<[] | void> {
+		const devData = await this.database.executeSql('SELECT * FROM developer', []).then(data => {
 			const developers: Dev[] = [];
 
 			if (data.rows.length > 0) {
@@ -82,17 +84,21 @@ export class DatabaseService {
 			}
 			this.developers.next(developers);
 		});
+		console.log('devData: ', devData);
+		return devData;
 	}
 
-	addDeveloper(name, skills, img) {
+	async addDeveloper(name: string, skills: any[], img: string): Promise<Dev[] | void> {
 		const data = [name, JSON.stringify(skills), img];
-		return this.database.executeSql('INSERT INTO developer (name, skills, img) VALUES (? ? ?)', data).then(data => {
+		const updatedDb = await this.database.executeSql('INSERT INTO developer (name, skills, img) VALUES (? ? ?)', data).then(data => {
 			this.loadDevelopers();
 		});
+		console.log('updatedDb: ', updatedDb);
+		return updatedDb;
 	}
 
-	getDeveloper(id): Promise<Dev> {
-		return this.database.executeSql('SELECT * FROM developer WHERE id = ?', [id]).then(data => {
+	async getDeveloper(id: number): Promise<Dev> {
+		const searchDbResults = await this.database.executeSql('SELECT * FROM developer WHERE id = ?', [id]).then(data => {
 			let skills = [];
 			if (data.rows.item[0].skills !== '') {
 				skills = JSON.parse(data.rows.item[0].skills);
@@ -105,26 +111,29 @@ export class DatabaseService {
 				img: data.rows.item[0].img
 			};
 		});
+		return searchDbResults;
 	}
 
-	deleteDeveloper(id) {
-		return this.database.executeSql('DELETE FROM developer WHERE id = ?', [id]).then(_ => {
+	async deleteDeveloper(id: number): Promise<any> {
+		const updatedDbAfterDeletion = await this.database.executeSql('DELETE FROM developer WHERE id = ?', [id]).then(_ => {
 			this.loadDevelopers();
 			this.loadProducts();
 		});
+		return updatedDbAfterDeletion;
 	}
 
-	updateDeveloper(dev: Dev) {
+	async updateDeveloper(dev: Dev): Promise<any> {
 		const data = [dev.name, JSON.stringify(dev.skills), dev.img];
-		return this.database.executeSql(`UPDATE developer SET name = ?, skills = ?, img = ? WHERE id = ${dev.id}`, data).then(data => {
+		const updatedDb = await this.database.executeSql(`UPDATE developer SET name = ?, skills = ?, img = ? WHERE id = ${dev.id}`, data).then(data => {
 			this.loadDevelopers();
 		});
+		return updatedDb;
 	}
 
-	loadProducts() {
+	async loadProducts(): Promise<any> {
 		// tslint:disable-next-line: max-line-length
 		const query = 'SELECT product.name, product.id, developer.name AS creator FROM product JOIN developer ON developer.id = product.creatorId';
-		return this.database.executeSql(query, []).then(data => {
+		const loadedProducts = await this.database.executeSql(query, []).then(data => {
 			const products = [];
 			if (data.rows.length > 0) {
 				for (let i = 0; i < data.rows.length; i++) {
@@ -137,13 +146,15 @@ export class DatabaseService {
 			}
 			this.products.next(products);
 		});
+		return loadedProducts;
 	}
 
-	addProduct(name, creator) {
+	async addProduct(name: string, creator: string): Promise<any> {
 		const data = [name, creator];
-		return this.database.executeSql('INSERT INTO product (name, creatorId) VALUES (? ?)', data).then(data => {
+		const updatedDbAfterProductAdded = await this.database.executeSql('INSERT INTO product (name, creatorId) VALUES (? ?)', data).then(data => {
 			this.loadProducts();
 		});
+		return updatedDbAfterProductAdded;
 	}
 
 }
