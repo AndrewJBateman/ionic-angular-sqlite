@@ -1,6 +1,6 @@
 # Ionic Angular SQLite
 
-* App to store data using the [Ionic 5 framework](https://ionicframework.com/docs), [cordova SQLite database](https://ionicframework.com/docs/native/sqlite) & [SQLite Porter](https://ionicframework.com/docs/native/sqlite-porter) and [Capacitor](https://capacitor.ionicframework.com/).
+* App to store data using the [Ionic framework](https://ionicframework.com/docs), [cordova SQLite database](https://ionicframework.com/docs/native/sqlite) & [SQLite Porter](https://ionicframework.com/docs/native/sqlite-porter) and [Capacitor](https://capacitor.ionicframework.com/).
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-sqlite?style=plastic)
@@ -10,17 +10,18 @@
 
 ## Table of contents
 
-* [Ionic Angular SQLite](#ionic-angular-sqlite)
-  * [Table of contents](#table-of-contents)
-  * [General info](#general-info)
-  * [Screenshots](#screenshots)
-  * [Technologies](#technologies)
-  * [Setup](#setup)
-  * [Code Examples](#code-examples)
-  * [Features](#features)
-  * [Status & To-do list](#status--to-do-list)
-  * [Inspiration](#inspiration)
-  * [Contact](#contact)
+* [:zap: Ionic Angular SQLite](#zap-ionic-angular-sqlite)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#code-examples)
+  * [:cool: Features](#features)
+  * [:clipboard: Status & To-Do List](#status--to-do-list)
+  * [:clap: Inspiration](#inspiration)
+  * [:file_folder: License](#file_folder-license)
+  * [:envelope: Contact](#contact)
 
 ## General info
 
@@ -34,11 +35,11 @@
 
 ## Technologies
 
-* [Ionic/angular v5](https://ionicframework.com/)
-* [Ionic v5](https://ionicframework.com/docs/cli)
-* [Angular 12](https://angular.io/)
-* [cordova plugin SQLite database v5](https://ionicframework.com/docs/native/sqlite)
-* [cordova SQLite Porter v5](https://ionicframework.com/docs/native/sqlite-porter)
+* [Ionic/angular v6](https://ionicframework.com/)
+* [Ionic v6](https://ionicframework.com/docs/cli)
+* [Angular v13](https://angular.io/)
+* [cordova plugin SQLite database v6](https://ionicframework.com/docs/native/sqlite)
+* [cordova SQLite Porter v6](https://ionicframework.com/docs/native/sqlite-porter)
 
 ## Setup
 
