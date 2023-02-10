@@ -37,7 +37,7 @@
 
 * [Ionic/angular v6](https://ionicframework.com/)
 * [Ionic v6](https://ionicframework.com/docs/cli)
-* [Angular v13](https://angular.io/)
+* [Angular v15](https://angular.io/)
 * [cordova plugin SQLite database v6](https://ionicframework.com/docs/native/sqlite)
 * [cordova SQLite Porter v6](https://ionicframework.com/docs/native/sqlite-porter)
 
@@ -48,7 +48,7 @@
 
 ## Code Examples
 
-* `database.service.ts` function to get details of a developer from the database.
+* `database.service.ts` function to get details of a developer from the database that return a promise of format Dev
 
 ```typescript
 getDeveloper(id): Promise<Dev> {
